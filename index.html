@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+
+    <meta http-equiv="Content-Type"  charset="utf-8">
+      <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+<link rel="stylesheet" type="text/css" href="libs/normalize.css">
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet"  href="css/css/font-awesome.css">
+    <!-- jQuery library (served from Google) -->
+<script src="js/jquery.1.7.1.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.bxslider').bxSlider();
+	});
+
+</script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			// Плавный скролл по якорям
+			$('a[href^="#"]').click(function () { 
+			    elementClick = $(this).attr("href");
+				destination = $(elementClick).offset().top;
+				if($.browser.safari){
+				$('body').animate( { scrollTop: destination }, 1000 );
+				} else {
+			    	$('html').animate( { scrollTop: destination }, 1000 );
+				}
+				return false;
+		   });
+		});
+</script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="header">
+		<div class="container clearfix">
+			<a class="logo"><img src="images/logo.png" alt=""></a>
+			<h2 class="header-item">We design <span class="orange">Things</span></h2>
+		<p class="header-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do elusmod tempor incididunt ut labore ut labore et dolore magna aliqua  </p>
+		<button class="butt">Here us </button>
+		<button class="butt">our works </button>
+		<a href="#footer-2" class="zr"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+		</div>
+	</div>
+	<section class="design">
+		<div class="container">
+		<div class="design-item">
+			<div class="design-item-item"><div class="span1"></div></div>
+			<h2 class="design-item-zag">Print design </h2>
+			<p class="design-item-p">Excepteur sint occaecat <br>
+               cupudatat non proident,<br>
+               sunt in culpa qui officia
+			</p>
+		</div>
+		<div class="design-item">
+			<div class="design-item-item"><div class="span2"></div></div>
+			<h2 class="design-item-zag">Web design</h2>
+			<p class="design-item-p">Incididunt ut labore et<br>
+			 dolore magna aliqua. Ut<br>
+			  enim ad minim veniam</p>
+		</div>
+		<div class="design-item">
+			<div class="design-item-item"><div class="span3"></div></div>
+			<h2 class="design-item-zag">app design</h2>
+			<p class="design-item-p">Quis nostrud exercitation<br>
+			 ullamco laboris nisi ut<br>
+			  aliquip ex ea commodo</p>
+		</div>
+		<div class="design-item">
+			<div class="design-item-item"><div class="span4"></div></div>
+			<h2 class="design-item-zag">logo design</h2>
+			<p class="design-item-p">Duis aute irure dolor in<br>
+			 reprehenderit in voluptate<br> 
+			 velit esse cillum dolore eu
+			  </p>
+		</div>
+		</div>
+	</section>
+	<section class="news">
+		<div class="container">
+			<form action="URL"><input type="text" class="news-item" placeholder="Enter Your email adress for newsletter" >
+				<button class="news-item-butt">subsribe</button>
+			</form>
+		</div>
+	</section>
+
+	<section class="works">
+		<div class="container">
+			<h2 class="work-zag">our <span class="orange">works</span></h2>
+			<p class="work-p">Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
+			 laboris nisi ut aliquip ex ea commodo consequat</p>
+			<div class="work-item">
+				<img src="images/work-1.png" alt="">
+				<div class="work-item-hover">
+					<h2 class="work-item-zag">ABAZOO WEBSITE</h2>
+			        <p class="work-item-p">Quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo</p>
+			        <button class="work-butt">show project</button>
+		       </div>
+		     </div>
+			<div class="work-item">
+				<img src="images/work-2.png" alt="">
+				<div class="work-item-hover">
+					<h2 class="work-item-zag">ABAZOO WEBSITE</h2>
+			        <p class="work-item-p">Quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo</p>
+			        <button class="work-butt">show project</button>
+		       </div>
+		     </div>
+		     <div class="work-item">
+				<img src="images/work-3.png" alt="">
+				<div class="work-item-hover">
+					<h2 class="work-item-zag">ABAZOO WEBSITE</h2>
+			        <p class="work-item-p">Quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo</p>
+			        <button class="work-butt">show project</button>
+		       </div>
+		     </div>
+		     <div class="work-item">
+				<img src="images/work-4.png" alt="">
+				<div class="work-item-hover">
+					<h2 class="work-item-zag">ABAZOO WEBSITE</h2>
+			        <p class="work-item-p">Quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo</p>
+			        <button class="work-butt">show project</button>
+		       </div>
+		     </div>
+		     <div class="work-item">
+				<img src="images/work-5.png" alt="">
+				<div class="work-item-hover">
+					<h2 class="work-item-zag">ABAZOO WEBSITE</h2>
+			        <p class="work-item-p">Quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo</p>
+			        <button class="work-butt">show project</button>
+		       </div>
+		     </div>
+		     <div class="work-item">
+				<img src="images/work-6.png" alt="">
+				<div class="work-item-hover">
+					<h2 class="work-item-zag">ABAZOO WEBSITE</h2>
+			        <p class="work-item-p">Quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo</p>
+			        <button class="work-butt">show project</button>
+		       </div>
+		     </div>
+		</div>
+		<button class="works-show">show more</button>
+	</section>
+	<div class="clients">
+		<div class="container">
+			<ul class="bxslider">
+			<li>
+			 <img src="images/avatar.png" alt="picture">
+			 <h2 class="clients-item">These guys are incredible! I get my project in 10 days and it was awesome<br>
+				Very good service Highly recommended</h2>
+			 <h2 class="clients-h">John Smith</h2>
+			 </li>
+			 <li>
+			 <img src="images/avatar.png" alt="picture">
+			 <h2 class="clients-item">These guys are incredible! I get my project in 10 days and it was awesome<br>
+				Very good service Highly recommended</h2>
+			 <h2 class="clients-h">John Smith</h2>
+			 </li>
+             </ul>
+		</div>
+	</div>
+	<div class="team">
+		<div class="container">
+			<h2 class="team-zag">OUR <span class="orange">TEAM</span></h2>
+			<p class="team-p">Sed ut perspiciatis unde omnis iste natus error sit<br> voluptatem accusantium doloremque laudantium totam rem  </p>
+			<div class="team-item">
+				<a href="f" class="active">
+					<img src="images/team-1.png" alt="picture" class="grey">
+					<div class="line"></div>
+				</a>
+				<h2 class="team-item-zag">CAtherina gail</h2>
+			<div class="social-icon">
+				<a href="" class="social-icon-item-1"></a>
+				<a href="" class="social-icon-item-2"></a>
+				<a href="" class="social-icon-item-3"></a></div>
+				<p class="team-item-p">Ut enim ad minim veniam, quis<br> nostrud exercitation ullamco laboris</p>
+			</div>
+				
+			<div class="team-item">
+				<a href="f" class="active">
+					<img src="images/team-2.png" alt="picture" class="grey">
+					<div class="line"></div>
+				</a>
+				<h2 class="team-item-zag">harvey rube</h2>
+			<div class="social-icon">
+				<a href="" class="social-icon-item-1"></a>
+				<a href="" class="social-icon-item-2"></a>
+				<a href="" class="social-icon-item-3"></a></div>
+				<p class="team-item-p">Nemo enim ipsam voluptatem quia <br>voluptas sit aspernatur aut odit aut </p>
+			</div>
+			<div class="team-item">
+				<a href="f" class="active">
+					<img src="images/team-3.png" alt="picture" class="grey">
+					<div class="line"></div>
+				</a>
+				<h2 class="team-item-zag">janet pris</h2>
+			<div class="social-icon">
+				<a href="" class="social-icon-item-1"></a>
+				<a href="" class="social-icon-item-2"></a>
+				<a href="" class="social-icon-item-3"></a></div>
+				<p class="team-item-p">Commodo consequat. Duis aute irure<br> dolor in reprehenderit in voluptate</p>
+			</div>
+			<div class="team-item">
+				<a href="f" class="active">
+					<img src="images/team-4.png" alt="picture" class="grey">
+					<div class="line"></div>
+				</a>
+				<h2 class="team-item-zag">kevin ward</h2>
+			<div class="social-icon">
+				<a href="" class="social-icon-item-1"></a>
+				<a href="" class="social-icon-item-2"></a>
+				<a href="" class="social-icon-item-3"></a></div>
+				<p class="team-item-p">Velit esse cillum dolore eu fugiat nulla<br> pariatur. Excepteur sint occaecat</p>
+			</div>
+		</div>
+	</div>
+	<div class="contact">
+		<div class="container">
+		<h2 class="contact-zag">say <span class="orange">hello</span></h2>
+		<p class="contact-p">Excepteursint occaacat cupidatat non proident, sunt in culpa<br>
+			qui officia deserunt molit anim id est laborum</p>
+		<form action="URL">
+			<input type="text" class="email" placeholder="Your Email">
+			<input type="text" class="subject" placeholder="Subject">
+			<input type="text" class="message" placeholder="Your Message">
+			<div class="boot clearfix"><button class="hire">hire us</button>
+			<div class="social">
+				<a href="" class="social-items-1"></a>
+				<a href="" class="social-items-2"></a>
+				<a href="" class="social-items-3"></a>
+				<a href="" class="social-items-4"></a>
+				<a href="" class="social-items-5"></a>
+			</div>
+			</div>
+		</form>
+		</div>
+	</div>
+    <div id="footer-2">
+    	<div class="container clearfix">
+    	<h2 class="left">2015 copiright design studio</h2>
+    	<div class="footer-item"><h2>designed by</h2><img src="images/logo-2.png" alt="logo-2"></div>
+    	</div>
+    </div>
+</div>
+</body>
+</html>
